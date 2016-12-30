@@ -1,0 +1,32 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "compactus",
+            "otherEntityName": "compactus",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "area",
+            "fieldType": "Area",
+            "fieldValues": "GOOD,BAD"
+        },
+        {
+            "fieldName": "row",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "cellColumn",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20161230143128",
+    "entityTableName": "cell",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "angularJSSuffix": "mySuffix"
+}

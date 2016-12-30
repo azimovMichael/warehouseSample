@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "warehouse",
+            "fieldType": "Warehouse",
+            "fieldValues": "ONE,TWO"
+        }
+    ],
+    "changelogDate": "20161230143129",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "compactus",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "angularJSSuffix": "mySuffix"
+}

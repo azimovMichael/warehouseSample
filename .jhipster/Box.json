@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "cell",
+            "otherEntityName": "cell",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "box"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "muId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "BoxStatus",
+            "fieldValues": "IN,OUT"
+        }
+    ],
+    "changelogDate": "20161230143127",
+    "entityTableName": "box",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "angularJSSuffix": "mySuffix"
+}

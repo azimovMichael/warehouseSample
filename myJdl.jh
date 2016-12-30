@@ -1,0 +1,46 @@
+entity Box {
+	muId Long,
+    status BoxStatus     
+}
+
+entity Cell {
+	area Area,  
+    row Long,
+    cellColumn Long
+}
+
+enum Area {
+	GOOD, BAD
+}
+// an ignored comment
+/** not an ignored comment */
+entity Compactus {
+	warehouse Warehouse
+}
+
+enum Warehouse {
+	ONE, TWO
+}
+
+enum BoxStatus {
+  IN, OUT
+}
+
+relationship OneToOne {
+	Box{cell} to Cell
+}
+
+relationship ManyToOne {
+	Cell{compactus} to Compactus
+}
+
+
+// Set pagination options
+paginate Box with infinite-scroll
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+// Set an angular suffix
+angularSuffix * with mySuffix
